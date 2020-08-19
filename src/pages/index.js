@@ -1,21 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import "bootstrap/dist/css/bootstrap.min.css"
+import Typical from "react-typical"
+import Jumbotron from "react-bootstrap/Jumbotron"
+import Container from "react-bootstrap/Container"
+import MiniNav from "../components/miniNav"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="app">
+      <Container className="home h-100 d-flex justify-content-center">
+        <Jumbotron className="jumbo my-auto">
+          <Typical
+            className="display-3"
+            steps={[
+              "console.log('Hello, World')",
+              2000,
+              "console.log('...I'm George')",
+            ]}
+          />
+        </Jumbotron>
+      </Container>
+      <Container className="home h-100 d-flex justify-content-center">
+        <MiniNav />
+      </Container>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>
 )
 
