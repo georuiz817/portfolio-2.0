@@ -60,7 +60,7 @@ const MiniNav = () => {
           </OverlayTrigger>
         </Link>{" "}
         ,{" "}
-        <Link className="nav-array" to="/">
+        <Link className="nav-array" to="/about">
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}

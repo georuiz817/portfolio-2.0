@@ -16,9 +16,9 @@ const IndexPage = () => (
           <Typical
             className="display-3"
             steps={[
-              "console.log('Hello, World')",
+              "console.log('Hello, World');",
               2000,
-              "console.log('...I'm George')",
+              "console.log('...I'm George');",
             ]}
           />
         </Jumbotron>

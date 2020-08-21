@@ -4,6 +4,7 @@ html {
   -webkit-text-size-adjust: 100%;
   background-color: #d9d9d9;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -16,13 +17,11 @@ body {
   background-color: #d9d9d9;
 }
 
-.app .jumbo {
+.app .jumbo,
+.MiniNav,
+.projects,
+.about {
   background-color: #d9d9d9;
-}
-
-.MiniNav {
-  background-color: #d9d9d9;
-  margin-bottom: 0;
 }
 
 #button-tooltip > .tooltip-inner {
@@ -30,37 +29,34 @@ body {
   color: black;
 }
 
-.MiniNav a {
-  text-decoration: none;
-  color: black;
-}
-
-.MiniNav a:hover{
-  color: black;
-  text-decoration: none;
-}
-
+.MiniNav a,
+.MiniNav a:hover,
 .app a:hover {
   text-decoration: none;
   color: black;
 }
 
-.nav-array {
-  color: black;
-}
-
+.nav-array,
 .nav-array:hover {
   color: black;
 }
 
-.projects{
+.my-card {
   background-color: #d9d9d9;
+  min-height: 18rem;
+  border: solid medium black;
+  border-radius: 15px;
+  width: 100%;
 }
 
+.project-button{
+  background-color:  #d9d9d9;
+  border: solid medium black;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
-
