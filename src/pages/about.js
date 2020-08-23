@@ -4,28 +4,33 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
 import me from "../images/me.jpeg"
+import Container from "react-bootstrap/Container"
 
 const About = () => (
   <Layout>
     <SEO title="About" />
     <div className="about">
       <MiniNav />
-      <div className="about-container" style={{ marginTop: "5%" }}>
-      <Typical className="display-3" steps={["console.log('about');"]} />
-        <div className="about-item-1">
-          <h1>About me</h1>
-          <p>After graduating with a Bachelors from Stony Brook in 2016, I started working in corporate 
-                office environments. I was able to thrive in hands on experience with topics like team building, 
-                data management, customer service, and corporate best practices. Feeling that the cubicle life and 
-                monotony of Insurance wasn't for me, I decided to start researching into other fields of business.
-                When doing my research I had a few things in mind that needed to be required of the field. Creativity,
-                spontanuity, and fun were all things I believed would spark my interest
+      <Container style={{ marginTop: "5%" }}>
+        <Typical className="display-3" steps={["console.log('about');"]} />
+        <div className="about-container">
+          <div className="about-item-1">
+            <img src={me} alt="n/a" />
+          </div>
+          <div className="about-item-2">
+            <h1>Hello there!</h1>
+            <h1>I'm George</h1>
+            <p>
+              I'm a full stack developer who gained all his knowledge from not only independent learning but from completion of Flatiron
+              Schools full stack engineering bootcamp. Now with more of a focus on front end, I'm a front end web developer intern over at 
+              Gesture (yourgesture.com) an on-demand gift delivery service, using React and Firebase to supplement 5000+ users and 200+ monthly orders.
+              Constantly being put to the test I've not only broadining my knowledge in regards to development but other key areas like teamwork, brain storming,
+              and best tech practices. Looking for a company to call home, I've adapted well to remote work as well as start up companies that provide
+              great company practices and small-knit communities.
             </p>
+          </div>
         </div>
-        <div className="about-item-2">
-          <img src={me} width="50%" alt="n/a" />
-        </div>
-      </div>
+      </Container>
     </div>
   </Layout>
 )

@@ -11,6 +11,7 @@ import { Person } from "react-bootstrap-icons"
 import { Journal } from "react-bootstrap-icons"
 import Tooltip from "react-bootstrap/Tooltip"
 import { Link } from "gatsby"
+import Resume from '.././Ruiz_Resume.pdf'
 
 const MiniNav = () => {
   const ProjectsToolTip = props => (
@@ -70,13 +71,13 @@ const MiniNav = () => {
           </OverlayTrigger>
         </Link>{" "}
         ,{" "}
-        <Link className="nav-array" to="/">
+        <Link className="nav-array" disabled>
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
             overlay={ResumeToolTip}
           >
-            <a href="#www.google.com">
+            <a href={Resume} download>
               <Journal />
             </a>
           </OverlayTrigger>

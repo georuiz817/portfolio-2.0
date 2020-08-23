@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
 import { Container, Col, Row } from "react-bootstrap"
 import Typical from "react-typical"
+ 
 
 let projectArray = [
   {
@@ -46,12 +47,12 @@ const projectsLoops = projectArray.map(p => (
           <div>
             <Row>
               <Col style={{ textAlign: "center" }}>
-                <a href={p.site}>
-                  <button className="project-button">Live Site</button>
+                <a href={p.site}  target="_blank" rel="noopener noreferrer">
+                  <button className="project-button">Live site</button>
                 </a>
               </Col>
               <Col style={{ textAlign: "center" }}>
-                <a href={p.gitHub}>
+                <a href={p.gitHub}  target="_blank" rel="noopener noreferrer">
                   <button className="project-button">GitHub</button>
                 </a>
               </Col>
@@ -59,7 +60,7 @@ const projectsLoops = projectArray.map(p => (
           </div>
         ) : (
           <div style={{ textAlign: "center" }}>
-            <a href={p.gitHub}>
+            <a href={p.gitHub}  target="_blank" rel="noopener noreferrer">
               <button className="project-button">GitHub</button>
             </a>
           </div>
