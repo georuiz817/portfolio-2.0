@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 html {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #d9d9d9;
@@ -7,6 +9,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #d9d9d9;
@@ -49,10 +52,46 @@ body {
   width: 100%;
 }
 
-.project-button{
-  background-color:  #d9d9d9;
+.my-card .my-card-content {
+  margin-top: 10%;
+  text-align: center;
+  padding: 5%;
+}
+
+.my-card-content .my-card-desc p {
+  display: inline-block;
+  text-align: left;
+}
+
+.project-button {
+  background-color: #d9d9d9;
+  opacity: 100%;
   border: solid medium black;
   border-radius: 5px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  margin-left: 10%;
+  grid-template-rows: auto auto;
+  grid-column-gap: 100px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.about-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.about-item-2 {
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 
 @media only screen and (max-width: 480px) {

@@ -8,7 +8,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import { HouseDoor } from "react-bootstrap-icons"
 import { Folder } from "react-bootstrap-icons"
 import { Person } from "react-bootstrap-icons"
-import { Envelope } from "react-bootstrap-icons"
+import { Journal } from "react-bootstrap-icons"
 import Tooltip from "react-bootstrap/Tooltip"
 import { Link } from "gatsby"
 
@@ -25,9 +25,9 @@ const MiniNav = () => {
     </Tooltip>
   )
 
-  const ContactToolTip = props => (
+  const ResumeToolTip = props => (
     <Tooltip id="button-tooltip" {...props}>
-      Mail
+      Resume
     </Tooltip>
   )
 
@@ -74,10 +74,10 @@ const MiniNav = () => {
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
-            overlay={ContactToolTip}
+            overlay={ResumeToolTip}
           >
-            <a href="mailto:ruiz.fullstack@gmail.com">
-              <Envelope />
+            <a href="#www.google.com">
+              <Journal />
             </a>
           </OverlayTrigger>
         </Link>{" "}

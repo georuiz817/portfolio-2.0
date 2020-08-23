@@ -34,15 +34,16 @@ let projectArray = [
 const projectsLoops = projectArray.map(p => (
   <Col>
     <div className="my-card">
-      <div>
-        <h1 style={{ textAlign: "center" }} className="display-3">
+      <div className="my-card-content">
+        <h2>
+          {p.name}
           {p.icon}
-        </h1>
-        <h3 style={{ textAlign: "center", margin: "5%" }}>{p.name}</h3>
-        <p style={{ paddingLeft: "3%" }}>{p.description}</p>
+        </h2>
+        <div className="my-card-desc">
+          <p>{p.description}</p>
+        </div>
         {p.site != null ? (
           <div>
-            <br></br>
             <Row>
               <Col style={{ textAlign: "center" }}>
                 <a href={p.site}>
