@@ -46,14 +46,14 @@ body {
 
 .my-card {
   background-color: #d9d9d9;
-  min-height: 18rem;
+  min-height: 20rem;
   border: solid medium black;
   border-radius: 15px;
   width: 100%;
 }
 
 .my-card .my-card-content {
-  margin-top: 10%;
+  margin-top: 16%;
   text-align: center;
   padding: 5%;
 }
@@ -61,12 +61,6 @@ body {
 .my-card-content .my-card-desc p {
   display: inline-block;
   text-align: left;
-}
-
-.project-button {
-  background-color: #d9d9d9;
-  border: solid medium black;
-  border-radius: 5px;
 }
 
 .about-container {
@@ -83,10 +77,10 @@ body {
   grid-column-end: 1;
 }
 
-.about-item-1 img{
-  max-width:100%;
-max-height:100%;
-border-radius: 15px;
+.about-item-1 img {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 15px;
 }
 
 .about-item-2 {

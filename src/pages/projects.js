@@ -4,7 +4,10 @@ import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
 import { Container, Col, Row } from "react-bootstrap"
 import Typical from "react-typical"
- 
+import GitHub from "../images/GitHub.png"
+import { Laptop } from "react-bootstrap-icons"
+import Tooltip from "react-bootstrap/Tooltip"
+import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 
 let projectArray = [
   {
@@ -32,6 +35,18 @@ let projectArray = [
   },
 ]
 
+const GitHubToolTip = props => (
+  <Tooltip id="button-tooltip" {...props}>
+    GitHub
+  </Tooltip>
+)
+
+const SiteToolTip = props => (
+  <Tooltip id="button-tooltip" {...props}>
+    Live Site
+  </Tooltip>
+)
+
 const projectsLoops = projectArray.map(p => (
   <Col>
     <div className="my-card">
@@ -47,21 +62,39 @@ const projectsLoops = projectArray.map(p => (
           <div>
             <Row>
               <Col style={{ textAlign: "center" }}>
-                <a href={p.site}  target="_blank" rel="noopener noreferrer">
-                  <button className="project-button">Live site</button>
+                <a className='nav-array' href={p.site} target="_blank" rel="noopener noreferrer">
+                <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={SiteToolTip}
+                  >
+                    <h1><Laptop/></h1>
+                  </OverlayTrigger>
                 </a>
               </Col>
               <Col style={{ textAlign: "center" }}>
-                <a href={p.gitHub}  target="_blank" rel="noopener noreferrer">
-                  <button className="project-button">GitHub</button>
+                <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={GitHubToolTip}
+                  >
+                    <img src={GitHub} alt="n/a" />
+                  </OverlayTrigger>
                 </a>
               </Col>
             </Row>
           </div>
         ) : (
           <div style={{ textAlign: "center" }}>
-            <a href={p.gitHub}  target="_blank" rel="noopener noreferrer">
-              <button className="project-button">GitHub</button>
+            <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
+              <OverlayTrigger
+                placement="bottom"
+                delay={{ show: 250, hide: 400 }}
+                overlay={GitHubToolTip}
+              >
+                <img src={GitHub} alt="n/a" />
+              </OverlayTrigger>
             </a>
           </div>
         )}

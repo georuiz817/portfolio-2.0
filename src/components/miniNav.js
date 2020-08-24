@@ -11,7 +11,7 @@ import { Person } from "react-bootstrap-icons"
 import { Journal } from "react-bootstrap-icons"
 import Tooltip from "react-bootstrap/Tooltip"
 import { Link } from "gatsby"
-import Resume from '.././Ruiz_Resume.pdf'
+import Resume from "../images/Ruiz_Resume.pdf"
 
 const MiniNav = () => {
   const ProjectsToolTip = props => (
@@ -49,8 +49,8 @@ const MiniNav = () => {
           >
             <HouseDoor />
           </OverlayTrigger>
-        </Link>{" "},
-        {" "}
+        </Link>{" "}
+        ,{" "}
         <Link className="nav-array" to="/projects">
           <OverlayTrigger
             placement="bottom"
