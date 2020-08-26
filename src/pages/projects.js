@@ -50,55 +50,58 @@ const SiteToolTip = props => (
 const projectsLoops = projectArray.map(p => (
   <Col>
     <div className="my-card">
-      <div className="my-card-content">
-        <h2>
-          {p.name}
-          {p.icon}
-        </h2>
-        <div className="my-card-desc">
-          <p>{p.description}</p>
-        </div>
-        {p.site != null ? (
-          <div>
-            <Row>
-              <Col style={{ textAlign: "center" }}>
-                <a className='nav-array' href={p.site} target="_blank" rel="noopener noreferrer">
-                <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={SiteToolTip}
-                  >
-                    <h1><Laptop/></h1>
-                  </OverlayTrigger>
-                </a>
-              </Col>
-              <Col style={{ textAlign: "center" }}>
-                <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-                  <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={GitHubToolTip}
-                  >
-                    <img src={GitHub} alt="n/a" />
-                  </OverlayTrigger>
-                </a>
-              </Col>
-            </Row>
-          </div>
-        ) : (
-          <div style={{ textAlign: "center" }}>
-            <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-              <OverlayTrigger
-                placement="bottom"
-                delay={{ show: 250, hide: 400 }}
-                overlay={GitHubToolTip}
+      <h2>
+        {p.name}
+        {p.icon}
+      </h2>
+      <p>{p.description}</p>
+      {p.site != null ? (
+        <div>
+          <Row>
+            <Col style={{ textAlign: "center" }}>
+              <a
+                className="nav-array"
+                href={p.site}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <img src={GitHub} alt="n/a" />
-              </OverlayTrigger>
-            </a>
-          </div>
-        )}
-      </div>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={SiteToolTip}
+                >
+                  <h1>
+                    <Laptop />
+                  </h1>
+                </OverlayTrigger>
+              </a>
+            </Col>
+            <Col style={{ textAlign: "center" }}>
+              <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={GitHubToolTip}
+                >
+                  <img src={GitHub} alt="n/a" />
+                </OverlayTrigger>
+              </a>
+            </Col>
+          </Row>
+        </div>
+      ) : (
+        <div style={{ textAlign: "center" }}>
+          <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
+            <OverlayTrigger
+              placement="bottom"
+              delay={{ show: 250, hide: 400 }}
+              overlay={GitHubToolTip}
+            >
+              <img src={GitHub} alt="n/a" />
+            </OverlayTrigger>
+          </a>
+        </div>
+      )}
     </div>
   </Col>
 ))
@@ -108,9 +111,10 @@ const Projects = () => (
     <SEO title="Projects" />
     <div className="projects">
       <MiniNav />
-      <Container style={{ marginTop: "5%" }}>
+      <Container  style={{ marginTop: "5%" }}>
         <Typical className="display-3" steps={["return projects;"]} />
-        <Row style={{ marginTop: "5%" }}>{projectsLoops}</Row>
+        <p>Click <a href='http://ruiz-dev.herokuapp.com/' target="_blank" rel="noopener noreferrer"><b>here</b></a> to see my old portoflio.. This counts as a project right?</p>
+        <Row style={{ marginTop: "3%" }}>{projectsLoops}</Row>
       </Container>
     </div>
   </Layout>

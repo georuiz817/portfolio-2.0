@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
 import Container from "react-bootstrap/Container"
 import Image from "../components/image"
-
+import { Envelope } from "react-bootstrap-icons"
 const About = () => (
   <Layout>
     <SEO title="About" />
@@ -13,7 +13,7 @@ const About = () => (
       <MiniNav />
       <Container style={{ marginTop: "5%" }}>
         <Typical className="display-3" steps={["console.log('about');"]} />
-        <div className="about-container">
+        <div className="about-grid">
           <div className="about-item-1">
             <Image />
           </div>
@@ -27,7 +27,7 @@ const About = () => (
               end, I'm a front end web developer intern over at Gesture
               (yourgesture.com) an on-demand gift delivery service, using React
               and Firebase to supplement 5000+ users and 200+ monthly orders.
-              Constantly being put to the test I've not only broadining my
+              Constantly being put to the test I'm not only broadining my
               knowledge in regards to development but other key areas like
               teamwork, brain storming, and best tech practices. Looking for a
               company to call home, I've adapted well to remote work as well as
