@@ -33,12 +33,21 @@ body {
 }
 
 .projects a,
+.about-item-2 a,
+.about-item-2 a:hover,
 .projects a:hover,
 .MiniNav a,
 .MiniNav a:hover,
 .app a:hover {
   text-decoration: none;
   color: black;
+}
+
+.projects a,
+.about-item-2 a,
+.about-item-2 a:hover,
+.projects a:hover {
+  font-weight: bold;
 }
 
 .nav-array,

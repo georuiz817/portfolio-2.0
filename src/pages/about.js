@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
 import Container from "react-bootstrap/Container"
 import Image from "../components/image"
-import { Envelope } from "react-bootstrap-icons"
+
 const About = () => (
   <Layout>
     <SEO title="About" />
@@ -34,6 +34,7 @@ const About = () => (
               start up companies that provide great company practices and
               small-knit communities.
             </p>
+            <p><a href="mailto:ruiz.fullstack@gmail.com">ruiz.fullstack@gmail.com</a> || <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/georuiz817/'>LinkedIn</a></p>
           </div>
         </div>
       </Container>
