@@ -2,22 +2,20 @@ import React from "react"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import GitHub from "../images/GitHub.png"
 import { Laptop } from "react-bootstrap-icons"
-import {Col, Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import Tooltip from "react-bootstrap/Tooltip"
 
 const GitHubToolTip = props => (
-   <Tooltip id="button-tooltip" {...props}>
-     GitHub
-   </Tooltip>
- )
- 
- const SiteToolTip = props => (
-   <Tooltip id="button-tooltip" {...props}>
-     Live Site
-   </Tooltip>
- )
- 
+  <Tooltip id="button-tooltip" {...props}>
+    GitHub
+  </Tooltip>
+)
 
+const SiteToolTip = props => (
+  <Tooltip id="button-tooltip" {...props}>
+    Live Site
+  </Tooltip>
+)
 
 const ProjectLoop = () => {
   let projectArray = [

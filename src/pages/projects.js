@@ -5,7 +5,7 @@ import MiniNav from "../components/miniNav.js"
 import { Container, Row } from "react-bootstrap"
 import Typical from "react-typical"
 import ProjectLoop from "../components/project-loop"
-import me from "../images/me.jpeg"
+import ProfessionalCol from "../components/professional-col"
 
 const Projects = () => (
   <Layout>
@@ -26,30 +26,10 @@ const Projects = () => (
             </a>{" "}
             to see my old portoflio.. This counts as a project right?
           </p>
-          <h2>
+          <h2 style={{ marginBottom: "1.5rem" }}>
             <u>Professional Projects</u>
           </h2>
-          <div className="professional-grid">
-            <div className="professional-col-one">
-              <p>
-                Currently I'm a front end web developer intern over at Gesture
-                (yougesture.com). I Work specifically on the four person website
-                team using HTML, SCSS, React, and even a bit of Firebase. Being
-                on the team pre-launch up until now has been not only
-                challenging but exciting. You'll typically find me doing an
-                array of tasks from debugging exsisting code to creating and
-                developing exciting new features (like the nifty and simple
-                giftbox). One thing that stands out to me the most is having the
-                opporunity to not only code but to do product developing
-                research and brainstorm and work with other various other
-                departments like the UX team
-              </p>
-            </div>
-            <div className="professional-col-two">
-              <img src={me} alt="n/a" width="100%" />
-            </div>
-          </div>
-
+          <ProfessionalCol />
           <h2>
             <u>Personal Projects</u>
           </h2>

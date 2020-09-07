@@ -78,8 +78,8 @@ body {
   padding-bottom: 5%;
 }
 
-.my-card:hover{
-  box-shadow:  3px 3px 5px 6px gray;
+.my-card:hover {
+  box-shadow: 3px 3px 5px 6px gray;
 }
 
 .my-card p {
@@ -115,18 +115,29 @@ body {
   grid-column-end: 2;
 }
 
-@keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@-webkit-keyframes fadein{
-  0% { opacity:0; }
-  66% { opacity:0; }
-  100% { opacity:1; }
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .project-cards {
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
@@ -134,23 +145,33 @@ body {
   margin-bottom: 2%;
 }
 
-.professional-grid{
+.professional-grid {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
 }
 
-.professional-col-one{
+.professional-col-one {
   grid-column-start: 1;
   grid-column-end: 1;
 }
 
-.professional-col-two{
+.professional-col-one p {
+  width: 90%;
+}
+
+.professional-col-two {
   grid-column-start: 2;
   grid-column-end: 2;
 }
 
- 
+.professional-col-two img {
+  border-radius: 15px;
+}
+
+.professional-vh {
+  height: 75vh;
+}
 
 @media only screen and (max-width: 480px) {
   html {
