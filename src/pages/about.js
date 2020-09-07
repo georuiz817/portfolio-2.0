@@ -9,7 +9,7 @@ import Image from "../components/image"
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="about">
+    <div className="about light-theme">
       <MiniNav />
       <Container style={{ marginTop: "5%" }}>
         <Typical className="display-3" steps={["console.log('about');"]} />

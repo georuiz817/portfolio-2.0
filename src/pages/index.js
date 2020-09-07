@@ -10,9 +10,9 @@ import MiniNav from "../components/miniNav"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="app">
+    <div className="app light-theme">
       <Container className="home h-100 d-flex justify-content-center">
-        <Jumbotron className="jumbo my-auto">
+        <Jumbotron className="jumbo my-auto ">
           <Typical
             className="display-3"
             steps={[
@@ -23,7 +23,7 @@ const IndexPage = () => (
           />
         </Jumbotron>
       </Container>
-      <Container className="home h-100 d-flex justify-content-center">
+      <Container className="index-nav home h-100 d-flex justify-content-center">
         <MiniNav />
       </Container>
     </div>

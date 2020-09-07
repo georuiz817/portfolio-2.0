@@ -38,7 +38,7 @@ const MiniNav = () => {
     </Tooltip>
   )
   return (
-    <div className="MiniNav">
+    <div className="MiniNav light-theme">
       <h1>
         [{" "}
         <Link className="nav-array" to="/">

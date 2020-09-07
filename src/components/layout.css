@@ -17,13 +17,24 @@ body {
 
 .app {
   margin-top: 10%;
-  background-color: #d9d9d9;
 }
 
-.app .jumbo,
-.MiniNav,
-.projects,
-.about {
+.dark-mode-comp {
+  float: right;
+  margin-top: 1%;
+}
+
+.light-theme {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.dark-theme {
+  background-color: black;
+  color: red;
+}
+
+.app .jumbo {
   background-color: #d9d9d9;
 }
 
@@ -56,7 +67,6 @@ body {
 }
 
 .my-card {
-  background-color: #d9d9d9;
   min-height: 20rem;
   border: solid medium black;
   border-radius: 15px;
@@ -66,6 +76,10 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
+}
+
+.my-card:hover{
+  box-shadow:  3px 3px 5px 6px gray;
 }
 
 .my-card p {
@@ -81,6 +95,8 @@ body {
   grid-row-gap: 10px;
   height: 50vh;
   margin-top: 5%;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
 }
 
 .about-item-1 {
@@ -98,6 +114,43 @@ body {
   grid-column-start: 2;
   grid-column-end: 2;
 }
+
+@keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+  0% { opacity:0; }
+  66% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+.project-cards {
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
+  margin-bottom: 2%;
+}
+
+.professional-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.professional-col-one{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.professional-col-two{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+ 
 
 @media only screen and (max-width: 480px) {
   html {

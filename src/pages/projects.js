@@ -2,119 +2,61 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
-import { Container, Col, Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import Typical from "react-typical"
-import GitHub from "../images/GitHub.png"
-import { Laptop } from "react-bootstrap-icons"
-import Tooltip from "react-bootstrap/Tooltip"
-import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-
-let projectArray = [
-  {
-    name: "Horizons-Library",
-    icon: "🍃",
-    description:
-      "Need information on your favorite Animal Crossing villagers and items? Look no further!",
-    site: "http://horizons-library.herokuapp.com/",
-    gitHub: "https://github.com/georuiz817/Horizons-Library",
-  },
-  {
-    name: "Gobbler",
-    icon: "🦃",
-    description:
-      "Celebrate the holiday by contributing to a sponsored charitable cause. Interact and discover what Thanksgiving is all about.",
-    gitHub: "https://github.com/georuiz817/Gobbler",
-  },
-
-  {
-    name: "Turtles-App",
-    icon: "🍕",
-    description:
-      "Who doesn't love pizza? Gain inspiration by viewing the board and feed a turtle your favorite classic (or obscure) pizza slices.",
-    gitHub: "https://github.com/georuiz817/turtles-app-",
-  },
-]
-
-const GitHubToolTip = props => (
-  <Tooltip id="button-tooltip" {...props}>
-    GitHub
-  </Tooltip>
-)
-
-const SiteToolTip = props => (
-  <Tooltip id="button-tooltip" {...props}>
-    Live Site
-  </Tooltip>
-)
-
-const projectsLoops = projectArray.map(p => (
-  <Col>
-    <div className="my-card">
-      <h2>
-        {p.name}
-        {p.icon}
-      </h2>
-      <p>{p.description}</p>
-      {p.site != null ? (
-        <div>
-          <Row>
-            <Col style={{ textAlign: "center" }}>
-              <a
-                className="nav-array"
-                href={p.site}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <OverlayTrigger
-                  placement="bottom"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={SiteToolTip}
-                >
-                  <h1>
-                    <Laptop />
-                  </h1>
-                </OverlayTrigger>
-              </a>
-            </Col>
-            <Col style={{ textAlign: "center" }}>
-              <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-                <OverlayTrigger
-                  placement="bottom"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={GitHubToolTip}
-                >
-                  <img src={GitHub} alt="n/a" />
-                </OverlayTrigger>
-              </a>
-            </Col>
-          </Row>
-        </div>
-      ) : (
-        <div style={{ textAlign: "center" }}>
-          <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-            <OverlayTrigger
-              placement="bottom"
-              delay={{ show: 250, hide: 400 }}
-              overlay={GitHubToolTip}
-            >
-              <img src={GitHub} alt="n/a" />
-            </OverlayTrigger>
-          </a>
-        </div>
-      )}
-    </div>
-  </Col>
-))
+import ProjectLoop from "../components/project-loop"
+import me from "../images/me.jpeg"
 
 const Projects = () => (
   <Layout>
     <SEO title="Projects" />
-    <div className="projects">
+    <div className="projects light-theme">
       <MiniNav />
-      <Container  style={{ marginTop: "5%" }}>
+      <Container style={{ marginTop: "5%" }}>
         <Typical className="display-3" steps={["return projects;"]} />
-        <p>Click <a href='http://ruiz-dev.herokuapp.com/' target="_blank" rel="noopener noreferrer"><b>here</b></a> to see my old portoflio.. This counts as a project right?</p>
-        <Row style={{ marginTop: "3%" }}>{projectsLoops}</Row>
+        <div className="project-cards">
+          <p>
+            Click{" "}
+            <a
+              href="http://ruiz-dev.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b>here</b>
+            </a>{" "}
+            to see my old portoflio.. This counts as a project right?
+          </p>
+          <h2>
+            <u>Professional Projects</u>
+          </h2>
+          <div className="professional-grid">
+            <div className="professional-col-one">
+              <p>
+                Currently I'm a front end web developer intern over at Gesture
+                (yougesture.com). I Work specifically on the four person website
+                team using HTML, SCSS, React, and even a bit of Firebase. Being
+                on the team pre-launch up until now has been not only
+                challenging but exciting. You'll typically find me doing an
+                array of tasks from debugging exsisting code to creating and
+                developing exciting new features (like the nifty and simple
+                giftbox). One thing that stands out to me the most is having the
+                opporunity to not only code but to do product developing
+                research and brainstorm and work with other various other
+                departments like the UX team
+              </p>
+            </div>
+            <div className="professional-col-two">
+              <img src={me} alt="n/a" width="100%" />
+            </div>
+          </div>
+
+          <h2>
+            <u>Personal Projects</u>
+          </h2>
+          <Row style={{ marginTop: "3%" }}>
+            <ProjectLoop />
+          </Row>
+        </div>
       </Container>
     </div>
   </Layout>
