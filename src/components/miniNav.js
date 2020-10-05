@@ -1,9 +1,4 @@
 import React from "react"
-//import {Lamp} from "react-bootstrap-icons";
-//import {LampFill} from "react-bootstrap-icons";
-//import {ToggleOn} from 'react-bootstrap-icons';
-//import {ToggleOff} from 'react-bootstrap-icons';
-//import './MiniNav.scss';
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
 import { HouseDoor } from "react-bootstrap-icons"
 import { Folder } from "react-bootstrap-icons"

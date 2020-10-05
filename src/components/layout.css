@@ -1,57 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* Global */
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #d9d9d9;
+  background-color: #292929;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d9d9d9;
-}
-
-.app {
-  margin-top: 10%;
-}
-
-.dark-mode-comp {
-  float: right;
-  margin-top: 1%;
-}
-
-.light-theme {
-  background-color: #d9d9d9;
-  color: black;
-}
-
-.dark-theme {
-  background-color: black;
-  color: red;
-}
-
-.app .jumbo {
-  background-color: #d9d9d9;
-}
-
-#button-tooltip > .tooltip-inner {
-  background-color: #d9d9d9;
-  color: black;
+  background-color: #292929;
+  height: 100%;
 }
 
 .projects a,
 .about-item-2 a,
 .about-item-2 a:hover,
-.projects a:hover,
-.MiniNav a,
-.MiniNav a:hover,
-.app a:hover {
+.projects a:hover {
   text-decoration: none;
-  color: black;
+  color: #dcdcdc;
 }
 
 .projects a,
@@ -59,32 +30,19 @@ body {
 .about-item-2 a:hover,
 .projects a:hover {
   font-weight: bold;
+  color: rgb(211, 138, 138);
 }
 
-.nav-array,
-.nav-array:hover {
-  color: black;
+.typical-container {
+  font-size: 5rem;
 }
 
-.my-card {
-  min-height: 20rem;
-  border: solid medium black;
-  border-radius: 15px;
-  width: 100%;
-  text-align: center;
-  padding-top: 16%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-}
+/* about */
 
-.my-card:hover {
-  box-shadow: 3px 3px 5px 6px gray;
-}
-
-.my-card p {
-  display: inline-block;
-  text-align: left;
+.about {
+  background-color: #292929;
+  color: #dcdcdc;
+  height: 100vh;
 }
 
 .about-grid {
@@ -93,10 +51,18 @@ body {
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 10px;
-  height: 50vh;
   margin-top: 5%;
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
   animation: 3s ease 0s normal forwards 1 fadein;
+  margin-top: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.about-typical {
+  margin-top: 5%;
+  margin-left: 15%;
+  font-size: 2rem;
 }
 
 .about-item-1 {
@@ -106,7 +72,7 @@ body {
 
 .about-item-1 img {
   max-width: 100%;
-  max-height: 80%;
+  max-height: 90%;
   border-radius: 15px;
 }
 
@@ -115,28 +81,48 @@ body {
   grid-column-end: 2;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+/* index */
+.app {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+  background-color: #292929;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.index-container {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  color: #dcdcdc;
+  justify-content: center;
+  font-size: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.miniNav-container {
+  margin-top: 4%;
+  text-align: center;
+  color: #dcdcdc;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-inner {
+  background: rgb(211, 138, 138) !important;
+}
+
+.tooltip .arrow:before {
+  /*border-bottom-color changes the arrow for the tooltip */
+  border-bottom-color: rgb(211, 138, 138) !important;
+  border-top-color: #292929 !important;
+}
+
+/* projec[ts */
+.projects {
+  background-color: #292929;
+  color: #dcdcdc;
 }
 
 .project-cards {
@@ -173,7 +159,111 @@ body {
   height: 75vh;
 }
 
-@media only screen and (max-width: 480px) {
+.my-card {
+  min-height: 20rem;
+  border: solid medium  rgb(211, 138, 138);
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  padding-top: 16%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.my-card:hover {
+  box-shadow: 3px 3px 5px 6px gray;
+}
+
+.my-card p {
+  display: inline-block;
+  text-align: left;
+}
+
+ 
+
+/* miniNav */
+
+#button-tooltip > .tooltip-inner {
+  background-color: #292929;
+  color: #dcdcdc;
+}
+
+.MiniNav a,
+.MiniNav a:hover,
+.app a:hover {
+  color: rgb(211, 138, 138);
+}
+
+.nav-array,
+.nav-array:hover {
+  color: #dcdcdc;
+}
+
+/* animation */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* media */
+@media only screen and (max-width: 750px) {
+  .index-container {
+    margin-top: 10%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: #dcdcdc;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .about-typical {
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .about-item-1 {
+    width: 100%;
+    margin-bottom: 1%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  .about-item-2 {
+    width: 100%;
+    margin-bottom: 2%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    font-size: 1rem;
+  }
+  .MiniNav {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
   html {
     font-size: 100%;
   }

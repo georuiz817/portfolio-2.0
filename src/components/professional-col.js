@@ -14,7 +14,7 @@ const ProfessionalCol = () => {
           exsisting code to creating and developing exciting new features (like
           the nifty and simple giftbox). One thing that stands out to me the
           most is having the opporunity to not only code but to do product
-          developing research and brainstorm and work with other various other
+          developing research and work with other various other
           departments like the UX team
         </p>
       </div>

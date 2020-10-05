@@ -5,7 +5,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <div>
+      <div className='App-Container'>
         <main>{children}</main>
       </div>
     </>

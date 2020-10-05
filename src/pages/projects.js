@@ -12,8 +12,10 @@ const Projects = () => (
     <SEO title="Projects" />
     <div className="projects light-theme">
       <MiniNav />
-      <Container style={{ marginTop: "5%" }}>
-        <Typical className="display-3" steps={["return projects;"]} />
+      <div className="about-typical">
+        <Typical steps={["return projects;"]} />
+      </div>
+      <Container style={{   marginLeft: '14%' }}>
         <div className="project-cards">
           <p>
             Click{" "}
