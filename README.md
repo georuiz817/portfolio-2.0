@@ -1,1 +1,1 @@
-
+My personal portoflio created with Gatsby JS. I heard Gatsby was fantastic for static websites when used with Netlify and I figured I'd give it a go. Take a look on ruiz-dev.me to view the live site. 
