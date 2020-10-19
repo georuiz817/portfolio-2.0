@@ -2,10 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import MiniNav from "../components/miniNav.js"
-import { Container, Row } from "react-bootstrap"
 import Typical from "react-typical"
 import ProjectLoop from "../components/project-loop"
-import ProfessionalCol from "../components/professional-col"
 
 const Projects = () => (
   <Layout>
@@ -15,31 +13,22 @@ const Projects = () => (
       <div className="about-typical">
         <Typical steps={["return projects;"]} />
       </div>
-      <Container style={{   marginLeft: '14%' }}>
-        <div className="project-cards">
-          <p>
-            Click{" "}
-            <a
-              href="http://ruiz-dev.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <b>here</b>
-            </a>{" "}
-            to see my old portoflio.. This counts as a project right?
-          </p>
-          <h2 style={{ marginBottom: "1.5rem" }}>
-            <u>Professional Projects</u>
-          </h2>
-          <ProfessionalCol />
-          <h2>
-            <u>Personal Projects</u>
-          </h2>
-          <Row style={{ marginTop: "3%" }}>
-            <ProjectLoop />
-          </Row>
-        </div>
-      </Container>
+<div className='about-grid'> 
+      <p>
+        Click{" "}
+        <a
+          href="http://ruiz-dev.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <b>here</b>
+        </a>{" "}
+        to see my old portoflio.. This counts as a project right?
+      </p>
+      <hr></hr>
+
+      <ProjectLoop />
+    </div>
     </div>
   </Layout>
 )

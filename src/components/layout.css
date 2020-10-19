@@ -1,36 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 /* Global */
 html {
-  font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #292929;
+  background-color: #5887ff;
 }
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #292929;
   height: 100%;
 }
 
 .projects a,
 .about-item-2 a,
-.about-item-2 a:hover,
-.projects a:hover {
+.about-item-2 a:hover {
   text-decoration: none;
-  color: #dcdcdc;
+  color: black;
 }
 
 .projects a,
 .about-item-2 a,
-.about-item-2 a:hover,
-.projects a:hover {
+.about-item-2 a:hover {
   font-weight: bold;
-  color: rgb(211, 138, 138);
+  color: black;
 }
 
 .typical-container {
@@ -40,20 +34,22 @@ body {
 /* about */
 
 .about {
-  background-color: #292929;
+  background-color: #5887ff;
   color: #dcdcdc;
   height: 100vh;
 }
 
+.about a {
+  color: black;
+}
+
 .about-grid {
-  display: grid;
+  width: 50%;
   grid-template-columns: auto 70%;
   grid-template-rows: auto;
   grid-column-gap: 25px;
   grid-row-gap: 10px;
   margin-top: 5%;
-  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-  animation: 3s ease 0s normal forwards 1 fadein;
   margin-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
@@ -86,7 +82,7 @@ body {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 100%;
-  background-color: #292929;
+  background-color: #5887ff;
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -98,7 +94,7 @@ body {
   grid-row-end: 1;
   color: #dcdcdc;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 3rem;
   align-items: center;
   text-align: center;
 }
@@ -110,119 +106,42 @@ body {
 }
 
 .tooltip.bs-tooltip-bottom .tooltip-inner {
-  background: rgb(211, 138, 138) !important;
+  background: black !important;
 }
 
 .tooltip .arrow:before {
   /*border-bottom-color changes the arrow for the tooltip */
-  border-bottom-color: rgb(211, 138, 138) !important;
-  border-top-color: #292929 !important;
+  border-bottom-color: black !important;
+  border-top-color: black !important;
 }
 
 /* projec[ts */
 .projects {
-  background-color: #292929;
+  background-color: #5887ff;
   color: #dcdcdc;
 }
 
-.project-cards {
-  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
-  animation: 3s ease 0s normal forwards 1 fadein;
-  margin-bottom: 2%;
+.p-info{
+  display:block;
+  margin-bottom: 5%;
 }
-
-.professional-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-}
-
-.professional-col-one {
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-.professional-col-one p {
-  width: 90%;
-}
-
-.professional-col-two {
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-
-.professional-col-two img {
-  border-radius: 15px;
-}
-
-.professional-vh {
-  height: 75vh;
-}
-
-.my-card {
-  min-height: 20rem;
-  border: solid medium  rgb(211, 138, 138);
-  border-radius: 15px;
-  width: 100%;
-  text-align: center;
-  padding-top: 16%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-}
-
-.my-card:hover {
-  box-shadow: 3px 3px 5px 6px gray;
-}
-
-.my-card p {
-  display: inline-block;
-  text-align: left;
-}
-
- 
 
 /* miniNav */
 
 #button-tooltip > .tooltip-inner {
-  background-color: #292929;
+  background-color: black;
   color: #dcdcdc;
 }
 
 .MiniNav a,
 .MiniNav a:hover,
 .app a:hover {
-  color: rgb(211, 138, 138);
+  color: black;
 }
 
 .nav-array,
 .nav-array:hover {
   color: #dcdcdc;
-}
-
-/* animation */
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  66% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* media */

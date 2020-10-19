@@ -1,21 +1,4 @@
 import React from "react"
-import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-import GitHub from "../images/GitHub.png"
-import { Laptop } from "react-bootstrap-icons"
-import { Col, Row } from "react-bootstrap"
-import Tooltip from "react-bootstrap/Tooltip"
-
-const GitHubToolTip = props => (
-  <Tooltip id="button-tooltip" {...props}>
-    GitHub
-  </Tooltip>
-)
-
-const SiteToolTip = props => (
-  <Tooltip id="button-tooltip" {...props}>
-    Live Site
-  </Tooltip>
-)
 
 const ProjectLoop = () => {
   let projectArray = [
@@ -24,7 +7,7 @@ const ProjectLoop = () => {
       icon: "🍃",
       description:
         "Need information on your favorite Animal Crossing villagers and items? Look no further!",
-      site: "http://horizons-library.herokuapp.com/",
+      site: "https://horizons-library.netlify.app/",
       gitHub: "https://github.com/georuiz817/Horizons-Library",
     },
     {
@@ -44,62 +27,18 @@ const ProjectLoop = () => {
     },
   ]
   return projectArray.map(p => (
-    <Col>
-      <div className="my-card light-theme">
-        <h2>
-          {p.name}
-          {p.icon}
-        </h2>
-        <p>{p.description}</p>
-        {p.site != null ? (
-          <div>
-            <Row>
-              <Col style={{ textAlign: "center" }}>
-                <a
-                  className="nav-array"
-                  href={p.site}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={SiteToolTip}
-                  >
-                    <h1>
-                      <Laptop />
-                    </h1>
-                  </OverlayTrigger>
-                </a>
-              </Col>
-              <Col style={{ textAlign: "center" }}>
-                <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-                  <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={GitHubToolTip}
-                  >
-                    <img src={GitHub} alt="n/a" />
-                  </OverlayTrigger>
-                </a>
-              </Col>
-            </Row>
-          </div>
-        ) : (
-          <div style={{ textAlign: "center" }}>
-            <a href={p.gitHub} target="_blank" rel="noopener noreferrer">
-              <OverlayTrigger
-                placement="bottom"
-                delay={{ show: 250, hide: 400 }}
-                overlay={GitHubToolTip}
-              >
-                <img src={GitHub} alt="n/a" />
-              </OverlayTrigger>
-            </a>
-          </div>
-        )}
-      </div>
-    </Col>
+    <div className="p-info">
+       <h1>
+        {p.name}
+        {p.icon}
+      </h1>
+      <p>
+        <em>{p.description}</em>
+      </p>
+      <p>- GitHub: <a target="_blank" rel="noopener noreferrer" href={p.gitHub}>{p.gitHub}</a></p>
+      {p.site ? <p> - live site: <a target="_blank" rel="noopener noreferrer" href={p.site}>{p.site}</a></p> : null}
+      <hr></hr>
+    </div>
   ))
 }
 

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Typical from "react-typical"
 import MiniNav from "../components/miniNav"
-
+import '../../index.css'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

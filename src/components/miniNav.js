@@ -1,6 +1,5 @@
 import React from "react"
 import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-import { HouseDoor } from "react-bootstrap-icons"
 import { Folder } from "react-bootstrap-icons"
 import { Person } from "react-bootstrap-icons"
 import { Journal } from "react-bootstrap-icons"
@@ -27,25 +26,10 @@ const MiniNav = () => {
     </Tooltip>
   )
 
-  const HomeToolTip = props => (
-    <Tooltip id="button-tooltip" {...props}>
-      Home
-    </Tooltip>
-  )
   return (
     <div className="MiniNav light-theme">
       <h1>
         [{" "}
-        <Link className="nav-array" to="/">
-          <OverlayTrigger
-            placement="bottom"
-            delay={{ show: 250, hide: 400 }}
-            overlay={HomeToolTip}
-          >
-            <HouseDoor />
-          </OverlayTrigger>
-        </Link>{" "}
-        ,{" "}
         <Link className="nav-array" to="/projects">
           <OverlayTrigger
             placement="bottom"
