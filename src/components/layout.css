@@ -1,4 +1,3 @@
- 
 /* Global */
 html {
   -ms-text-size-adjust: 100%;
@@ -10,7 +9,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 .projects a,
@@ -36,7 +34,6 @@ body {
 .about {
   background-color: #5887ff;
   color: #dcdcdc;
-  height: 100vh;
 }
 
 .about a {
@@ -103,6 +100,7 @@ body {
   margin-top: 4%;
   text-align: center;
   color: #dcdcdc;
+  font-size: 2.5rem;
 }
 
 .tooltip.bs-tooltip-bottom .tooltip-inner {
@@ -121,13 +119,16 @@ body {
   color: #dcdcdc;
 }
 
-.p-info{
-  display:block;
+.p-info {
+  display: block;
   margin-bottom: 5%;
 }
 
 /* miniNav */
-
+.MiniNav {
+ 
+  font-size: 2.5rem;
+}
 #button-tooltip > .tooltip-inner {
   background-color: black;
   color: #dcdcdc;
@@ -179,7 +180,18 @@ body {
   }
   .MiniNav {
     text-align: center;
+    font-size: 1.5rem;
   }
+  .home-typical {
+    font-size: 1rem;
+  }
+  .projects{
+    font-size: 1rem;
+  }
+  .p-info{
+    font-size: 0.5rem;
+  }
+ 
 }
 
 @media only screen and (max-width: 750px) {

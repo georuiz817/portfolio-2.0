@@ -27,8 +27,7 @@ const MiniNav = () => {
   )
 
   return (
-    <div className="MiniNav light-theme">
-      <h1>
+    <div className="MiniNav">
         [{" "}
         <Link className="nav-array" to="/projects">
           <OverlayTrigger
@@ -62,7 +61,6 @@ const MiniNav = () => {
           </OverlayTrigger>
         </Link>{" "}
         ]
-      </h1>
     </div>
   )
 }

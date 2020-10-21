@@ -11,6 +11,7 @@ const IndexPage = () => (
     <div className="app">
       <div className="index-container">
         <Typical
+          className='home-typical'
           steps={[
             "console.log('Hello, World');",
             2000,
