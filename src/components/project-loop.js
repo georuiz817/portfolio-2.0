@@ -7,7 +7,7 @@ const ProjectLoop = () => {
       icon: "🌧️",
       description:
         "Get todays temp around the world and some nice tunes while you're at it.",
-      site: "temp-o.netlify.app/#/",
+      site: "https://temp-o.netlify.app/#/",
       gitHub: "https://github.com/georuiz817/temp-o",
     },
     {
