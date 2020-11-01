@@ -30,7 +30,6 @@ const ProjectLoop = () => {
     <div className="p-info">
       <h1>
         {p.name}
-        {p.icon}
       </h1>
       <p>
         <em>{p.description}</em>

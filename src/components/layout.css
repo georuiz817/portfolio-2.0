@@ -2,7 +2,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #5887ff;
+  background-color: #f0f0f0;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 .about-item-2 a,
 .about-item-2 a:hover {
   text-decoration: none;
-  color: black;
+  color: #f0f0f0;
 }
 
 .projects a,
@@ -32,8 +32,12 @@ body {
 /* about */
 
 .about {
-  background-color: #5887ff;
-  color: #dcdcdc;
+  background-color: #f0f0f0;
+  color:  black;
+}
+
+#contact-link{
+  font-weight: bold;
 }
 
 .about a {
@@ -79,7 +83,7 @@ body {
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 100%;
-  background-color: #5887ff;
+  background-color: #f0f0f0;
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -89,7 +93,7 @@ body {
 .index-container {
   grid-row-start: 1;
   grid-row-end: 1;
-  color: #dcdcdc;
+  color: black;
   justify-content: center;
   font-size: 3rem;
   align-items: center;
@@ -99,24 +103,27 @@ body {
 .miniNav-container {
   margin-top: 4%;
   text-align: center;
-  color: #dcdcdc;
+  color: black;
   font-size: 2.5rem;
 }
 
 .tooltip.bs-tooltip-bottom .tooltip-inner {
-  background: black !important;
+  background: #f0f0f0 !important;
+  border: solid black thin;
 }
 
 .tooltip .arrow:before {
   /*border-bottom-color changes the arrow for the tooltip */
   border-bottom-color: black !important;
   border-top-color: black !important;
+  border: solid black thin;
+
 }
 
 /* projec[ts */
 .projects {
-  background-color: #5887ff;
-  color: #dcdcdc;
+  background-color: #f0f0f0;
+  color: black;
 }
 
 .p-info {
@@ -130,8 +137,7 @@ body {
   font-size: 2.5rem;
 }
 #button-tooltip > .tooltip-inner {
-  background-color: black;
-  color: #dcdcdc;
+  color: black;
 }
 
 .MiniNav a,
@@ -142,7 +148,7 @@ body {
 
 .nav-array,
 .nav-array:hover {
-  color: #dcdcdc;
+  color: black;
 }
 
 /* media */
@@ -151,7 +157,7 @@ body {
     margin-top: 10%;
     grid-row-start: 1;
     grid-row-end: 1;
-    color: #dcdcdc;
+    color: black;
     justify-content: center;
     font-size: 2rem;
     align-items: center;

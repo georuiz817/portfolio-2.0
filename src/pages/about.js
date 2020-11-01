@@ -29,7 +29,7 @@ const About = () => (
             HTML, CSS, JavaScript, React/Redux, Typescript, Firestore, Rails, SQLite 
           </p>
           <p>Contact:</p>
-          <p>
+          <p id='contact-link'>
             <a href="mailto:ruiz.fullstack@gmail.com">
               ruiz.fullstack@gmail.com
             </a>{" "}
