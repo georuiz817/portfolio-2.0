@@ -11,12 +11,12 @@ const ProjectLoop = () => {
       gitHub: "https://github.com/georuiz817/temp-o",
     },
     {
-      name: "Horizons-Library",
+      name: "Carrot Admin",
       icon: "🍃",
       description:
-        "Need information on your favorite Animal Crossing villagers and items? Look no further!",
-      site: "https://horizons-library.netlify.app/",
-      gitHub: "https://github.com/georuiz817/Horizons-Library",
+        "Join the Carrot admin team and manage our tasty food stock",
+      site: "https://carrot-admin.netlify.app/#/login",
+      gitHub: "https://github.com/georuiz817/carrot-admin-panel",
     },
     {
       name: "Gobbler",
