@@ -14,19 +14,6 @@ const Projects = () => (
         <Typical steps={["return projects;"]} />
       </div>
       <div className="about-grid">
-        <p>
-          Click{" "}
-          <a
-            href="http://ruiz-dev.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <b>here</b>
-          </a>{" "}
-          to see my old portoflio.. This counts as a project right?
-        </p>
-        <hr></hr>
-
         <ProjectLoop />
       </div>
     </div>

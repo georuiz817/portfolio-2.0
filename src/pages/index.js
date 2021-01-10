@@ -13,7 +13,7 @@ const IndexPage = () => (
         <Typical
           className='home-typical'
           steps={[
-            "console.log('Hello, World');",
+            "console.log('Hello World!');",
             2000,
             "console.log('...I'm George');",
           ]}
